@@ -5,8 +5,7 @@ def parse_args():
     parser = argparse.ArgumentParser()
     parser.add_argument('--epochs', default=300, type=int)
     parser.add_argument('--pretrained_model_path', default=None, type=str)
-    parser.add_argument('--train_data_path',type=str, default='/home/wangping/datasets/DAVIS/JPEGImages/480p')
-    # './data/traindata/DAVIS/JPEGImages/480p'
+    parser.add_argument('--train_data_path',type=str, default='./data/traindata/DAVIS/JPEGImages/480p')
     parser.add_argument("--test_weight_path", default='./checkpoint/hisvit13_gray.pth', help='hisvit9_gray or hisvit13_gray or hisvit9_color', type=str)
     parser.add_argument('--test_data_path',type=str, default='./data/testdata/gray_256', help='gray_256 or color_512') 
     parser.add_argument('--B', default=8, type=int)
