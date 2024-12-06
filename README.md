@@ -2,7 +2,7 @@
 
 [Ping Wang](https://scholar.google.com/citations?user=WCsIUToAAAAJ&hl), [Yulun Zhang](https://scholar.google.com/citations?user=ORmLjWoAAAAJ&hl), [Lishun Wang](https://scholar.google.com/citations?user=BzkbrCgAAAAJ&hl), [Xin Yuan](https://scholar.google.com/citations?user=cS9CbWkAAAAJ&hl)
 
-#### Video SCI Task
+#### Video SCI Reconstruction Task and Its Degradation Analysis
 ![pipeline](https://github.com/user-attachments/assets/783424c1-0a1e-4291-b5ed-be37fd5b5ac8)
 
 #### Video SCI Reconstruction Architecture
