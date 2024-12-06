@@ -45,42 +45,6 @@ python test.py --color_channels 3 --blocks 9 --size '[512,512]' --test_weight_pa
 
 
 
-## Training
-
-
-#### HiSViT-9 Training on gray dataset
-
-###### Pretraining
-
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nproc_per_node=8 train.py --distributed=True --color_channels 1 --blocks 9 --size '[128,128]' --epochs 100 --test_flag False --save_model_step 5
-
-###### Fine-tuning
-
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nproc_per_node=8 train.py --distributed=True --color_channels 1 --blocks 9 --size '[256,256]' --epochs 50 --test_flag True --save_model_step 1
-
-
-#### HiSViT-13 Training on gray dataset
-
-###### Pretraining
-
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nproc_per_node=8 train.py --distributed=True --color_channels 1 --blocks 13 --size '[128,128]' --epochs 100 --test_flag False --save_model_step 5
-
-###### Fine-tuning
-
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nproc_per_node=8 train.py --distributed=True --color_channels 1 --blocks 13 --size '[256,256]' --epochs 50 --test_flag True --save_model_step 1
-
-
-#### HiSViT-9 Training on color dataset
-
-###### Pretraining
-
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nproc_per_node=8 train.py --distributed=True --color_channels 3 --blocks 9 --size '[128,128]' --epochs 100 --test_flag False --save_model_step 5
-
-###### Fine-tuning
-
-CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nproc_per_node=8 train.py --distributed=True --color_channels 3 --blocks 9 --size '[256,256]' --epochs 50 --test_flag True --save_model_step 1
-
-
 ## Citation
 If you use HiSViT, please consider citing:
 ```
