@@ -3,7 +3,8 @@
 [Ping Wang](https://scholar.google.com/citations?user=WCsIUToAAAAJ&hl), [Yulun Zhang](https://scholar.google.com/citations?user=ORmLjWoAAAAJ&hl), [Lishun Wang](https://scholar.google.com/citations?user=BzkbrCgAAAAJ&hl), [Xin Yuan](https://scholar.google.com/citations?user=cS9CbWkAAAAJ&hl)
 
 #### Video SCI Task
-![pipeline](https://github.com/user-attachments/assets/cea8421d-82df-448f-b216-5e94468967f3)
+![pipeline](https://github.com/user-attachments/assets/783424c1-0a1e-4291-b5ed-be37fd5b5ac8)
+
 #### Video SCI Reconstruction Architecture
 ![arch](https://github.com/user-attachments/assets/cff201f2-d1f9-4e4c-8db4-9fe206b43c06)
 #### HiSViT (building block)
@@ -80,6 +81,18 @@ CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nproc_per_node=8 train.py --dist
 CUDA_VISIBLE_DEVICES=0,1,2,3,4,5,6,7 torchrun --nproc_per_node=8 train.py --distributed=True --color_channels 3 --blocks 9 --size '[256,256]' --epochs 50 --test_flag True --save_model_step 1
 
 
+## Citation
+If you use HiSViT, please consider citing:
+```
+@inproceedings{wang2025hierarchical,
+  title={Hierarchical Separable Video Transformer for Snapshot Compressive Imaging},
+  author={Wang, Ping and Zhang, Yulun and Wang, Lishun and Yuan, Xin},
+  booktitle={European Conference on Computer Vision},
+  pages={104--122},
+  year={2025},
+  organization={Springer}
+}
+```
 
 
 
