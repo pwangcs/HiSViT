@@ -43,7 +43,9 @@ python test.py --color_channels 1 --blocks 13 --size '[256,256]' --test_weight_p
 
 python test.py --color_channels 3 --blocks 9 --size '[512,512]' --test_weight_path './checkpoint/hisvit9_color.pth' --test_data_path './data/testdata/color_512' 
 
+#### HiSViT-9 real data results
 
+real data results are available at https://drive.google.com/file/d/1ewV8TrR84LTp2j1Lqm1F2b3LgwlnD7V8/view
 
 ## Citation
 If you use HiSViT, please consider citing:
